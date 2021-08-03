@@ -22,7 +22,7 @@ struct Movie {
         let posters = MovieDataManager.shared.poster
         
         for index in 0..<movies.count{
-            let movie = Movie(titel: titels[index], year: years[index], poster: posters[index])
+            let movie = Movie (titel: titels[index], year: years[index], poster: posters[index])
             movies.append(movie)
         }
         

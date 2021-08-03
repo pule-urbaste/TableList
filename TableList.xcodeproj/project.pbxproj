@@ -18,7 +18,9 @@
 		60CABCD226B8834C0025D6D2 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CABCD126B8834C0025D6D2 /* DataManager.swift */; };
 		60CABCD426B884760025D6D2 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CABCD326B884760025D6D2 /* Movie.swift */; };
 		60CABCD626B885050025D6D2 /* MovieDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CABCD526B885050025D6D2 /* MovieDataManager.swift */; };
-		60CABCD826B89A490025D6D2 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CABCD726B89A490025D6D2 /* MovieTableViewCell.swift */; };
+		60CABCDC26B9BEE70025D6D2 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CABCDB26B9BEE70025D6D2 /* MovieTableViewCell.swift */; };
+		60CABCDE26B9CE6B0025D6D2 /* DetailMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CABCDD26B9CE6B0025D6D2 /* DetailMusicViewController.swift */; };
+		60CABCE026B9CEF20025D6D2 /* DetailMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CABCDF26B9CEF20025D6D2 /* DetailMovieViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +37,9 @@
 		60CABCD126B8834C0025D6D2 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		60CABCD326B884760025D6D2 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		60CABCD526B885050025D6D2 /* MovieDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDataManager.swift; sourceTree = "<group>"; };
-		60CABCD726B89A490025D6D2 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MovieTableViewCell.swift; path = TableList/Controller/MovieTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		60CABCDB26B9BEE70025D6D2 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		60CABCDD26B9CE6B0025D6D2 /* DetailMusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMusicViewController.swift; sourceTree = "<group>"; };
+		60CABCDF26B9CEF20025D6D2 /* DetailMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +106,10 @@
 			isa = PBXGroup;
 			children = (
 				60CABCCD26B877420025D6D2 /* MusicTableViewController.swift */,
+				60CABCDD26B9CE6B0025D6D2 /* DetailMusicViewController.swift */,
 				60CABCCB26B877000025D6D2 /* MovieTableViewController.swift */,
-				60CABCD726B89A490025D6D2 /* MovieTableViewCell.swift */,
+				60CABCDB26B9BEE70025D6D2 /* MovieTableViewCell.swift */,
+				60CABCDF26B9CEF20025D6D2 /* DetailMovieViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -189,13 +195,15 @@
 			files = (
 				60CABCD426B884760025D6D2 /* Movie.swift in Sources */,
 				60CABCCC26B877000025D6D2 /* MovieTableViewController.swift in Sources */,
-				60CABCD826B89A490025D6D2 /* MovieTableViewCell.swift in Sources */,
+				60CABCDC26B9BEE70025D6D2 /* MovieTableViewCell.swift in Sources */,
 				60CABCD226B8834C0025D6D2 /* DataManager.swift in Sources */,
 				60CABCCE26B877420025D6D2 /* MusicTableViewController.swift in Sources */,
+				60CABCDE26B9CE6B0025D6D2 /* DetailMusicViewController.swift in Sources */,
 				60CABCB026B84D390025D6D2 /* AppDelegate.swift in Sources */,
 				60CABCB226B84D390025D6D2 /* SceneDelegate.swift in Sources */,
 				60CABCD626B885050025D6D2 /* MovieDataManager.swift in Sources */,
 				60CABCD026B882420025D6D2 /* Song.swift in Sources */,
+				60CABCE026B9CEF20025D6D2 /* DetailMovieViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

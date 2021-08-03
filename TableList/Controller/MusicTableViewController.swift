@@ -61,7 +61,9 @@ class MusicTableViewController: UITableViewController {
      return cell
      }
      
-    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+            return 80
+        }
     /*
      // Override to support conditional editing of the table view.
      override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -97,14 +99,20 @@ class MusicTableViewController: UITableViewController {
      }
      */
     
-    /*
+    
      // MARK: - Navigation
      
      // In a storyboard-based application, you will often want to do a little preparation before navigation
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let indexPath = tableView.indexPathForSelectedRow {
+        
      // Get the new view controller using segue.destination.
+            print(indexPath)
+            let detailMusicVC = segue.destination as! DetailMusicViewController
      // Pass the selected object to the new view controller.
+            detailMusicVC.song = songs[indexPath.row]
+        }
      }
-     */
+     
     
 }

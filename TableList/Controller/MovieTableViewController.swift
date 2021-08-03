@@ -26,23 +26,29 @@ class MovieTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return movies.count
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "movieCell", for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: "movieCell", for: indexPath)
+            
+            let movie = movies[indexPath.row]
+            cell.textLabel?.text = movie.titel
+            cell.detailTextLabel?.text = movie.year
+            cell.imageView?.image = UIImage(named: movie.poster)
+            
+            return cell
+        }
+    
+     
+        //cell.MovieLabel.text =
+        //cell.MovieImageView.image = UIImage(named: "Avengers Endgame2019")
 
+    //Mark: - Table View Delegate
         
-        // Configure the cell...
-        
-        let movie = movies[indexPath.row]
-        cell.textLabel?.text = movie.titel
-        cell.detailTextLabel?.text = movie.year
-        cell.imageView?.image = UIImage(named: movie.poster)
-
-        return cell
-    }
+        override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+            return 250
+        }
     
 
     /*
@@ -80,14 +86,20 @@ class MovieTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if let indexPath = tableView.indexPathForSelectedRow {
+    
+ // Get the new view controller using segue.destination.
+        print(indexPath)
+        
+        let detailMovieVC = segue.destination as! DetailMovieViewController
+ // Pass the selected object to the new view controller.
+        detailMovieVC.movie = movies[indexPath.row]
     }
-    */
+ }
 
 }
